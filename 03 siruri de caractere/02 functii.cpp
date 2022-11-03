@@ -4,15 +4,15 @@ using namespace std;
 
 int main(){
  // strlen (*sursa) - afla lungimea unui sir
- char sir[20],sir2[20], c;
- int cnt=0;
- cin.get(sir,20);
+// char sir[20],sir2[20], c;
+// int cnt=0;
+// cin.get(sir,20);
  //cout<< strlen(sir);
- cin.get();
+ //cin.get();
  //********************************************
  // CONCATENARE - strcat(*dest, *sursa)  -adauga sirul
  //                 destinatie sirului sursa.
- cin.get(sir2,20);
+// cin.get(sir2,20);
 // strcat(sir, " ");
 // strcat(sir, sir2);
 // cout<< sir<<'\t';
@@ -61,6 +61,59 @@ int main(){
    // stricmp(*sir1, *sir2) - nu face distinctie intre
                             // litere mari si mici
 
-    cout << strcmp(sir, sir2);
+ //   cout << strcmp(sir, sir2);
 
+  //  strstr(*s1, *s2) - identifica daca s2 este subsir a s1
+   // returneaza adresa de inceput de la s1
+// char s1[20], s2[20];
+// cin.get(s1,20);
+// cin.get();
+// cin.get(s2,20);
+//
+// cout<< strstr(s1,s2);
+//
+
+// un program care sterge toate aparitiile subsirului citit
+//dintr-un alt sir
+
+// char sir[100], subsir[25], *p;
+// int lungime;
+// cin.get(sir,100);
+// cin.get();
+// cin.get(subsir,25);
+// lungime = strlen(subsir);
+// p = strstr(sir,subsir);
+// while (p){
+//    strcpy(p,p+lungime);
+//    p = strstr(p,subsir);
+// }
+// cout<<sir;
+
+ // strtok (*s1,*sep) - desparte in cuvinte
+ //  sep {, .!}
+
+//  char s1[]={"mama, ta?ta si sora"};
+//  char sep[]={", ?"} ;
+//  char *p;
+//  p = strtok(s1,sep);
+//  while (p){
+//     cout << p<<endl;
+//     p = strtok(NULL, sep);
+//  }
+
+// strspn( *s1,*s2) - returneaza nr de caractere s1
+                 //   care se regasesc in s2
+                  //  caracterele trebuie sa fie consecutive
+
+//  char s1[]={"AB3def"};
+//  char s2[]={"16A32BF"} ;
+//  cout << strspn(s1,s2);
+
+ char cuvant[30];
+ char cifre[11]="0123456789";
+ cin >>cuvant;
+ if (strspn(cuvant,cifre) == strlen(cuvant))
+    cout << "este cuvant ";
+ else
+    cout <<" nu este cuvant";
 }
