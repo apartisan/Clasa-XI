@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <stdlib.h>
 using namespace std;
 
 int main(){
@@ -109,11 +110,25 @@ int main(){
 //  char s2[]={"16A32BF"} ;
 //  cout << strspn(s1,s2);
 
- char cuvant[30];
- char cifre[11]="0123456789";
- cin >>cuvant;
- if (strspn(cuvant,cifre) == strlen(cuvant))
-    cout << "este cuvant ";
- else
-    cout <<" nu este cuvant";
+// char cuvant[30];
+// char cifre[11]="0123456789";
+// cin >>cuvant;
+// if (strspn(cuvant,cifre) == strlen(cuvant))
+//    cout << "este cuvant ";
+// else
+//    cout <<" nu este cuvant";
+
+    // int atoi(sir)  - converteste un sir catre tipul int
+    // daca intalneste un sir alfanumeric, returneaza 0
+
+    // itoa(int valoare,sir, int baza) - converteste o valoare
+  //  de tip integer intr-un sir. Daca baza este 10, retine si semnul.
+
+   char s[20]="1234";
+   char t[20];
+   int a;
+   a = atoi(s)+1;
+   itoa(a,t,10);
+
+
 }
