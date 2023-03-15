@@ -6,8 +6,8 @@
 using namespace std;
 
 int main(){
-   int m[4]={2,3,5,10};
-   int S=15;
+   int m[]={1,2,3};
+   int S=5;
    int a[100][100];
    int lungime=sizeof(m) / sizeof(int);
    for(int i=0;i<lungime;i++)

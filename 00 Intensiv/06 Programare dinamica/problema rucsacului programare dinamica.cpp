@@ -39,9 +39,9 @@ int knapSack(int W, int wt[], int val[], int n)
 // Driver Code
 int main()
 {
-    int val[] = { 60, 100, 120 };
-    int wt[] = { 10, 20, 30 };
-    int W = 50;
+    int val[] = {12,1,2,1,4};
+    int wt[] = {4,2,2,1,10};
+    int W = 15;
     int n = sizeof(val) / sizeof(val[0]);
 
     cout << knapSack(W, wt, val, n);
