@@ -5,7 +5,6 @@ int n, sol[10];
 void init(int k){
     sol[k]=0;
 }
-
 int succesor(int k){
     if (sol[k]< n){
         sol[k]++;

@@ -64,12 +64,8 @@ void rezolva_labirint(int i,int j, int k){
                     labirint[i_vecin][j_vecin] = 1;
                 }
             }
-
     }
 }
-
-
-
 int main(){
     citire_date();
     afisare();
