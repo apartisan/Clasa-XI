@@ -11,7 +11,7 @@ int cost[8][8]={{I,I,I,I,I,I,I,I},
                 {I,I,10,I,14,18,I,I},
                 },
     apropiat[8]={I,I,I,I,I,I,I,I},
-    t[2][7];
+     fvtri9
 int main(){
     int i,j,k, u,v, n=7,
         minim = I;
