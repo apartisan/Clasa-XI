@@ -1,7 +1,7 @@
 
 #include <iostream>
 using namespace std;
-int v[10],n;
+int v[5],n=9;
 
 int valid(int k){
     int pare=0,impare=0,i;
@@ -23,28 +23,38 @@ int valid(int k){
 }
 
 int solutie(int k){
-    return k==5;
+    if(k==4)
+        return 1;
+    else return 0;
 }
 
 void afisare(){
     for (int i=1; i<=5;i++)
         cout << v[i]<<" ";
 }
-int Back(int k){
-    int i;
-    for(i=0;i<n;i++){
-        v[k]=i;
-        if(valid(k))
-            if(solutie(k))
-                afisare();
-            else
+int succesor(int k){
+    if (v[k]< n){
+        v[k]++;
+        return 1;
+    }
+    else
+        return 0;
+}
+void  Back(int k){
+    if (solutie(k))
+        afisare();
+    else{
+        v[k]=0;
+        while (succesor(k))
+            if (valid(k))
                 Back(k+1);
     }
 }
 
 int main(){
-    n=9;
-    Back(1);
 
+    Back(1);
+for (int i=1; i<=5;i++)
+        cout << v[i]<<" ";
 return 0;
 }
